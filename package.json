@@ -3,6 +3,13 @@
     "author": "ging-moocs",
     "license": "GNU",
     "version": "0.0.0",
+
+    "scripts": {
+        "start": "node APP.js"
+    },
+    "engines": {
+        "node": "^12.21.0"
+    },
     "info": {
         "githubURL": "ging-moocs/MOOC_html_mod7-AJAX_entrega",
         "serverUrl": "https://autocorector.dit.upm.es/",
