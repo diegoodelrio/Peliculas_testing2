@@ -6,7 +6,7 @@
     "scripts": {
         "server:dev": "nodemon app.js --ignore frontend",
         "dev": "webpack-dev-server --open",
-        "start": "app.js"
+        "start": "node app.js"
     },
     "engines": {  
         "node": "^12.21.0"
