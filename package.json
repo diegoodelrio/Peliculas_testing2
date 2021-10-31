@@ -5,7 +5,6 @@
     "version": "0.0.0",
     "scripts": {
         "server:dev": "nodemon app.js --ignore frontend",
-        "build": "NODE_ENV=production webpack -p",
         "dev": "webpack-dev-server --open",
         "start": "node APP.js"
     },
