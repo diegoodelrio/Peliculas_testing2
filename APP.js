@@ -1,4 +1,5 @@
 require('dotenv').config();
+var session = require('express-session');
 const mongoose = require('mongoose');
 
 // MONGOOSE CONNECTION 
@@ -7,7 +8,7 @@ mongoose.connect(process.env.MONGODB_URI, {
     useUnifiedTopology: true, });
 
 // SESSION MIDDLEWARE 
-var app = express()
+var app = express();
 app.use(
     session({
         secret: process.env.SESSION_SECRET,
