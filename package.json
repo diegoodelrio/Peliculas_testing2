@@ -4,11 +4,12 @@
     "license": "GNU",
     "version": "0.0.0",
     "scripts": {
-        "server:dev": "nodemon APP.js --ignore frontend",
+        "server:dev": "nodemon app.js --ignore frontend",
+        "build": "NODE_ENV=production webpack -p",
+        "dev": "webpack-dev-server --open",
         "start": "node APP.js"
     },
-    "engines": {
-        
+    "engines": {  
         "node": "^12.21.0"
     },
     "info": {
