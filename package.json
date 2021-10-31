@@ -3,7 +3,6 @@
     "author": "ging-moocs",
     "license": "GNU",
     "version": "0.0.0",
-
     "scripts": {
         "server:dev": "nodemon app.js --ignore frontend",
         "dev": "webpack-dev-server --open",
@@ -12,7 +11,6 @@
     "engines": {
         "node": "^12.21.0"
     },
-    
     "info": {
         "githubURL": "ging-moocs/MOOC_html_mod7-AJAX_entrega",
         "serverUrl": "https://autocorector.dit.upm.es/",
@@ -20,7 +18,9 @@
         "assignmentId": "4"
     },
     "dependencies": {
+        "connect-mongo": "^3.2.0",
         "dotenv": "^10.0.0",
+        "express": "^4.17.1",
         "express-session": "^1.17.2",
         "mongoose": "^6.0.12"
     }

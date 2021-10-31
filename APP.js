@@ -8,7 +8,10 @@ mongoose.connect(process.env.MONGODB_URI, {
 
 // SESSION MIDDLEWARE 
 var session = require('express-session')
-var app = express()
+var express = require('express')
+
+var app=express()
+
 app.use(
     session({
         secret: process.env.SESSION_SECRET,
