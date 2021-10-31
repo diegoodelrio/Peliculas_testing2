@@ -1,5 +1,6 @@
 require('dotenv').config();
 const mongoose = require('mongoose');
+const connectMongo = require('connect-mongo');
 
 // MONGOOSE CONNECTION 
 mongoose.connect(process.env.MONGODB_URI, {
@@ -7,8 +8,9 @@ mongoose.connect(process.env.MONGODB_URI, {
     useUnifiedTopology: true, });
 
 // SESSION MIDDLEWARE 
-var session = require('express-session')
-var express = require('express')
+var session = require('express-session');
+var express = require('express');
+const MongoStore = connectMongo(session);
 
 var app=express()
 
@@ -253,7 +255,7 @@ document.addEventListener('click', ev => {
     else if (matchEvent(ev, '.show')) showContr (myId(ev));
     else if (matchEvent(ev, '.delete')) deleteContr (myId(ev));
     else if (matchEvent(ev, '.Añadir')) newContr ();
-    else if (matchEvent(ev, '.añadir_pelicula')) createContr (myId(ev));
+    else if (matchEvent(ev, '.añadir_pelicula')) createContr ();
     else if (matchEvent(ev, '.Reset')) resetContr ();
 })
  
