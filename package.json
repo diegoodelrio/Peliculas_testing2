@@ -3,11 +3,14 @@
     "author": "ging-moocs",
     "license": "GNU",
     "version": "0.0.0",
-
     "scripts": {
+        "server:dev": "nodemon APP.js --ignore frontend",
+        "build": "NODE_ENV=production webpack -p",
+        "dev": "webpack-dev-server --open",
         "start": "node APP.js"
     },
     "engines": {
+        
         "node": "^12.21.0"
     },
     "info": {
