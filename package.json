@@ -8,7 +8,7 @@
         "dev": "webpack-dev-server --open",
         "start": "node app.js"
     },
-    "engines": {  
+    "engines": {
         "node": "^12.21.0"
     },
     "info": {
@@ -19,6 +19,7 @@
     },
     "dependencies": {
         "dotenv": "^10.0.0",
+        "express-session": "^1.17.2",
         "mongoose": "^6.0.12"
     }
 }
