@@ -7,7 +7,7 @@ mongoose.connect(process.env.MONGODB_URI, {
     useUnifiedTopology: true, });
 
 // SESSION MIDDLEWARE 
-PeliculasTest.use(
+app.use(
     session({
         secret: process.env.SESSION_SECRET,
         resave: true, 
